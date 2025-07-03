@@ -11,7 +11,7 @@ games = 0
 # Run 10,000 times.
 
 while games < 10000:
-    # Make a list of 1-3 (Not necessary, but useful for demonstration purposes)
+    # Make a list of 1-3 
     doors = [1, 2, 3]
     removableDoors = doors.copy();
     
@@ -31,7 +31,7 @@ while games < 10000:
     except ValueError:
         pass  # Value not found, no problem
 
-        #At this point, we will have one or two options, pick a random one.
+        #At this point, we will have one or two options of doors we can remove, pick a random one.
     removedDoor = random.choice(removableDoors)
 
 
@@ -43,7 +43,7 @@ while games < 10000:
 
 
     # contestant switches value.
-        #To future proof program for derived projects, we did this as a random and an error checker.
+        #While unorthodx, this logic will be useful when we make derivative projects.
     userDoorOld = userDoor
     userDoor = random.choice(doors)
     while userDoor == userDoorOld:
